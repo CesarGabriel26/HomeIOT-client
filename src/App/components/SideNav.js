@@ -23,11 +23,11 @@ const SideNavigation = () => {
     useEffect(() => {
         const user = localStorage.getItem('userToken') || ""
         setUserLoged(user)
-    })
+    }, [])
 
     return (
-        <div style={{ width: 240, height: '100vh', position: 'fixed' }}>
-            <Sidenav style={{ height: '100vh', position: 'relative' }}>
+        <div style={{ width: 240, height: '100vh', position: 'fixed' }} >
+            <Sidenav expanded={true} style={{ height: '100vh', position: 'relative' }} appearance='default' >
                 <Sidenav.Header>
                     <div style={{ padding: 18, fontWeight: 'bold' }}>
                         Dashboard
@@ -46,7 +46,7 @@ const SideNavigation = () => {
                     </Nav>
                     <Nav style={NavigationStyle.footer}>
                         {
-                            (userLoged != "") ? (
+                            (userLoged !== "") ? (
                                 <>
                                     <Nav.Item as={Link} to="/settings" eventKey="4" style={NavigationStyle.link} >
                                         <MdSettings size={24} style={NavigationStyle.icon} />

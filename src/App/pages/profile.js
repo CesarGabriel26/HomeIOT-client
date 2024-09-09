@@ -1,7 +1,8 @@
 // src/pages/Profile.js
 import React, { useEffect, useState } from 'react';
 import { getUserInfo } from '../../utils/ApiHandler/User';
-import { Image, Container, Row, Col, Button } from 'react-bootstrap';
+import { Image, Row, Col, Container } from 'react-bootstrap';
+import { Button } from 'rsuite';
 
 function Profile() {
   const [user, setUser] = useState(null);

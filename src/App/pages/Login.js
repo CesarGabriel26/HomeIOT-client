@@ -1,7 +1,8 @@
 // src/pages/Login.js
 import React, { useState } from 'react';
 import { useLocation } from 'react-router-dom';
-import { Form, Button, Container, Row, Col, Alert } from 'react-bootstrap';
+import { Text, Button} from 'rsuite';
+import { Form, Container, Row, Col, Alert } from 'react-bootstrap';
 import { login } from '../../utils/ApiHandler/User';
 
 function Login() {
@@ -64,11 +65,14 @@ function Login() {
                 <Form.Text style={{cursor: 'pointer'}} onClick={() => {
                   window.location.href = '/Singin';
                 }} >
-                  Não possui uma conta ? <span style={{ color: 'blue' }} >Registre-se</span>
+                  <div style={{display : 'flex'}} >
+                    <Text className='me-2' > Não possui uma conta?</Text> <Text color='orange'> Registre-se</Text>
+                  </div>
+                  
                 </Form.Text>
               </Form.Group>
               <Form.Group>
-                <Button variant="primary" type="submit" disabled={isLoading}>
+                <Button appearance="ghost" color='orange' type="submit" disabled={isLoading}>
                   {isLoading ? 'Logging in...' : 'Login'}
                 </Button>
               </Form.Group>

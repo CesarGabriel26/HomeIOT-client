@@ -1,15 +1,18 @@
 // src/pages/Home.js
-import React, { useState, useEffect } from 'react';
-import { Button } from 'react-bootstrap';
-
+import React from 'react';
+import { Button, Progress } from 'rsuite';
 
 function Home() {
   return (
     <div>
-      <h2>My Deviasdasedasdfaces</h2>
-      <ul>
-      <Button variant="warning">Clique aqui</Button>
-      </ul>
+      <Button appearance="ghost" color='orange' >
+        Login
+      </Button>
+
+
+      <div style={{ width: 200 }} >
+        <Progress.Circle gapDegree={90} gapPosition='bottom' strokeColor="orange" percent={50} />
+      </div>
     </div>
   );
 }

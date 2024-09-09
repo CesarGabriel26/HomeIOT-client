@@ -68,3 +68,8 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+### Extra files
+imagem base: https://smarthomescene.com/wp-content/uploads/2023/10/best-home-assistant-dashboard-themes-2023-featured.jpg
+react icon : https://react-icons.github.io/react-icons/icons/md/
+react - bootstrap : https://react-bootstrap.netlify.app/docs/forms/overview/
