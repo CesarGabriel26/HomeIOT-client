@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Sidenav, Nav } from 'rsuite';
 import { MdGridView, MdLogin, MdDevices, MdSettings, MdAccountCircle } from 'react-icons/md';
+import { GoGraph } from "react-icons/go";
 
 const NavigationStyle = {
     link: { display: 'flex', alignItems: 'center', paddingLeft: 15 },
@@ -42,6 +43,10 @@ const SideNavigation = () => {
                         <Nav.Item as={Link} to="/devices" eventKey="3" style={NavigationStyle.link} >
                             <MdDevices size={24} style={NavigationStyle.icon} />
                             Devices
+                        </Nav.Item>
+                        <Nav.Item as={Link} to="/graphs" eventKey="4" style={NavigationStyle.link} >
+                            <GoGraph size={24} style={NavigationStyle.icon} />
+                            Graficos
                         </Nav.Item>
                     </Nav>
                     <Nav style={NavigationStyle.footer}>

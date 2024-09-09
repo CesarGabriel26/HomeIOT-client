@@ -12,6 +12,7 @@ import Profile from './App/pages/profile';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'rsuite/dist/rsuite.min.css';
+import Graphs from './App/pages/Graficos';
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
               <Route path="/Singin" element={<Singin />} />
               <Route path="/profile" element={<Profile />} />
               <Route path="/devices" element={<Devices />} />
+              <Route path="/graphs" element={<Graphs />} />
             </Routes>
           </div>
         </div>
